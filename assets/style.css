@@ -1,60 +1,128 @@
-/* css reset */
-
+/* CSS reset */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
+html, body {
+    height: 100%;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-/* css reset */
 
+/* Global styles */
 body {
     font-family: "La Belle Aurore", cursive; 
+    line-height: 1;
 }
 
-ul{
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
     list-style-type: none;
 }
 
+/* Header styles */
 header {
-    background-image: url("./images/profile/background-image.jpg") ;
+    height: 400px;
+    background-image: url("./images/profile/background-image.jpg");
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px;
-    font-size: 48px;
+    justify-content: center;
+    font-size: 32px;
+    position: relative;
 }
 
-header h2 {
-    color: #ABC29C;
-    font-weight: 100;
+header ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
 }
+
 header li {
     font-size: 34px;
+    padding: 20px 30px 8px 30px;
+    color: white;
+    background-color: #2F670B;
+    opacity: 0.71;
+    border-radius: 20px;
+}
+
+header li:first-child {
+    background-color: #56AF1C;
+    opacity: 0.56;
+}
+
+.title {
+    text-align: center;
+}
+
+/* Main styles */
+main {
+    border: 2px red solid;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+
+main > * {
+    width: 35%;
+    height: 670px;
+    border: 1px black solid;
+    margin: 100px 0;
+}
+/* Picture container */
+.picture-container {
+    width: 200px;
+    height: 200px; /* Ajustez la hauteur selon vos besoins */
+    border: 3px green solid;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-top: -100px; /* Pour ajuster le positionnement vertical */
+    margin-left: 120px;
+}
+
+.picture-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.picture-container::before {
+    content: ''; /* Crée un pseudo-élément pour le centrage */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+}
+
+/* Sample container */
+.sample-display {
+    width: 35%;
+}
+
+.sample-container {
+    border: 3px green solid;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.sample-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
