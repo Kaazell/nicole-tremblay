@@ -162,3 +162,28 @@ footer {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
+/* gallery  */
+.gallery-page {
+    width: 100%;
+    border: 5px black solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-page h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.art-container {
+    width: 20%;
+    height: auto; /* Ajustez la hauteur selon vos besoins */
+    overflow: hidden;
+}
+
+.art-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
