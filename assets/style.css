@@ -36,6 +36,7 @@ header {
     justify-content: center;
     font-size: 32px;
     position: relative;
+    margin-bottom: 150px;
 }
 
 header ul {
@@ -67,26 +68,23 @@ header li:first-child {
 main {
     border: 2px red solid;
     display: flex;
-    justify-content: space-evenly;
     padding: 2%;
+    justify-content: space-around;
 }
-
-main > * {
+.about {
     width: 35%;
-    height: 670px;
-    border: 1px black solid;
-    margin: 100px 0;
-}
-/* Picture container */
+    background-color: rgb(182, 246, 140, 0.3);
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgb(205, 202, 202);}
+
 .picture-container {
     width: 200px;
     height: 200px; /* Ajustez la hauteur selon vos besoins */
-    border: 3px green solid;
     border-radius: 50%;
     overflow: hidden;
-    position: relative;
-    margin-top: -100px; /* Pour ajuster le positionnement vertical */
-    margin-left: 120px;
+    margin-top: -115px; /* Pour ajuster le positionnement vertical */
+    margin-left: 200px;
+    margin: -115px auto 0 auto;
 }
 
 .picture-container img {
@@ -95,34 +93,39 @@ main > * {
     display: block;
 }
 
-.picture-container::before {
-    content: ''; /* Crée un pseudo-élément pour le centrage */
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 100%;
+.about h3 {
+    margin-top: 50px;
+    font-size: 48px;
+    font-weight: 100;
 }
 
-/* Sample container */
+.about p {
+    margin-top: 40px;
+    font-size: larger;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+
+}
+
+.sign {
+    float: right;
+    margin-top: 50px;
+    margin-right: 50px;
+    font-family: "La Belle Aurore", cursive; 
+    font-size: 38px;
+}
+
 .sample-display {
+    border: 2px green solid;
     width: 35%;
-}
-
-.sample-container {
-    border: 3px green solid;
     overflow: hidden;
-    width: 100%;
-    height: 100%;
-    position: relative;
 }
 
 .sample-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
+    max-width: 95%;
+    opacity: 0.9;
+    height: auto;
+    display: block;
+    box-shadow: 30px 30px 5px rgba(54, 74, 40, 0.8);
 }
+    
