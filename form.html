@@ -25,36 +25,24 @@
       </ul>
     </header>
     <main>
-      <div class="gallery-page">
-        <h2>Mes aquarelles</h2>
-        <div class="filters">
-          <button>Tous</button>
-          <button>Paysages</button>
-          <button>Portraits</button>
-        </div>
-        <div class="gallery-container">
-          <div class="art-container">
-            <img src="./assets/images/gallery/garden.jpg" alt="Jardin" />
-          </div>
-          <div class="art-container">
-            <img src="./assets/images/gallery/panda.jpg" alt="Jardin" />
-          </div>
-          <div class="art-container">
-            <img src="./assets/images/gallery/poor.jpg" alt="Jardin" />
-          </div>
-          <div class="art-container">
-            <img src="./assets/images/gallery/sad.jpg" alt="Jardin" />
-          </div>
-          <div class="art-container">
-            <img src="./assets/images/gallery/ladder.jpg" alt="Jardin" />
-          </div>
-          <div class="art-container">
-            <img src="./assets/images/gallery/garden.jpg" alt="Jardin" />
-          </div>
-          <div class="art-container">
-            <img src="./assets/images/gallery/tree.jpg" alt="Jardin" />
-          </div>
-        </div>
+      <div class="form-container">
+        <h2>Contactez-moi</h2>
+        <form
+          class="contact-form"
+          action="https://formsubmit.co/youremail@gmail.com"
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="Votre nom" required />
+          <input type="email" name="email" placeholder="Votre email" required />
+          <textarea
+            name="message"
+            placeholder="Votre message"
+            rows="10"
+            cols="60"
+            required
+          ></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
       </div>
     </main>
     <footer>
